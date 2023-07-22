@@ -17,6 +17,15 @@ html {
   scroll-behavior: smooth;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+  text-align: center;
+}
+
 *,
 *::before,
 *::after {
@@ -222,4 +231,28 @@ background-color: var(--second-color);
 }
 .offline{
   background-color: #a50000;
+}
+
+/* ******** Search Filters ********** */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.card{
+  background-color: var(--second-color);
+  color: var(--main-color);
+  transition: all 0.3s ease-out;
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+.card figcaption{
+  padding: 1rem;
+}
+
+.filter{
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
 }
